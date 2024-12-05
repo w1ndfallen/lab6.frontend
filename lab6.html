@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='style.css'/>
+    <title>Форма реєстрації на подію</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Форма реєстрації на подію</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="first-name">Ім'я:</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Прізвище:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Електронна пошта:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label>Тип учасника:</label>
+                <input type="radio" id="student" name="participant-type" value="student" required>
+                <label for="student">Студент</label><br>
+                <input type="radio" id="lecturer" name="participant-type" value="lecturer">
+                <label for="lecturer">Викладач</label>
+            </div>
+            <div class="form-group">
+                <label for="tickets">Кількість квитків:</label>
+                <input type="number" id="tickets" name="tickets" min="1" required>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">Погоджуюсь з правилами</label>
+            </div>
+            <div class="form-group">
+                <button type="submit">Зареєструватися</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
